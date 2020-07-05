@@ -46,7 +46,7 @@ Under the **detection class:**
 after making the above mentioned changes. Using python, run the script called "Crop.py"
 
 ### Results
-The script behaves as expected, and is capable of grading bread as intended. The image results can be found in the folder "results" given from this reposity. Additionally, the original input images can be found within the "testimgs" folder, also within this folder.
+The script behaves as expected, and is capable of grading bread as intended. The image results can be found in the folder "model graded" given from this reposity. Additionally, the original input images can be found within the "model test" folder, also within this folder.
 
 ### Limitations
 The project currently performs best when there is only 1 pistolete in the input picture. The quality of the second run of image detection contains noticeably lower confidence levels, this is due to training data set of the neural network included very few close up images of the pistoletes.  
