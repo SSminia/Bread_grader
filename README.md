@@ -11,6 +11,25 @@ Afterwards, they undergo detection again through the same neural network, with a
 
 The grade is then written as text on the original image before then being regenerated and rewritten to the project folder.
 
+### Behaviour
+The program beheaviour is described in the following flow chart.
+
+![Flowchart](https://i.imgur.com/UVAJDfq.png)
+
+**To give an illustration on how the program works, in this section, it will be taken step by tep.**
+
+The input image:
+![input image](https://i.imgur.com/HJxSM6B.jpg)
+
+This image is then run through YOLO to identify the object
+![Object found](https://i.imgur.com/M5lRe67.png)
+
+Which is then cropped. A second run of the neural network is done with a lower IOU Threshold
+![Second NN run](https://i.imgur.com/A2FHBKB.png)
+
+Then, using these multiple detections, a simple algorithm is used to derivate a grade based on the results of the second Neural network. This Grade is then drawn over the origianl image
+![Result](https://i.imgur.com/hqzfSoC.png)
+
 ### Requirements
 Within this section you will find a list of the libraries requiered to run the scripts included in this project.
 
